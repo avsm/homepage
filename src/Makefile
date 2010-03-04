@@ -1,6 +1,6 @@
 OCAMLMAKEFILE = ../OCamlMakefile
 
-SOURCES = bib.ml fs.ml config.ml db.ml pages.ml papers.ml dispatch.ml server.ml 
+SOURCES = bib.ml fs.ml config.ml db.ml papers.ml dispatch.ml server.ml 
 RESULT = server
 PACKS += orm cohttpserver htmlgen pa_shelve.syntax orm.syntax
 DEBUG = yes

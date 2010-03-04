@@ -8,10 +8,6 @@ module Resp = struct
   
   (* dispatch non-file URLs *)
   let dispatch req oc = function
-    | [] 
-    | "index.html" :: [] ->
-        let body = Pages.Index.t in
-        Http_daemon.respond ~body oc
     | "papers" :: tl ->
         Papers.dispatch oc tl
     | _ -> 
